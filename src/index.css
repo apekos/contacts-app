@@ -1,0 +1,32 @@
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: hsl(234, 12%, 34%); /* Very Dark Blue */
+  background-color: hsl(0, 0%, 98%); /* Very Light Gray */
+}
+
+a {
+  text-decoration: underline;
+}
+
+.padding {
+  padding: 20px;
+}
+
+.margin {
+  margin: 20px;
+}
+
+.text-center {
+  text-align: center;
+}
