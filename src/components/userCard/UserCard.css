@@ -1,0 +1,54 @@
+.userCard {
+  position: relative;
+  border: 1px solid #ddd;
+  border-top: 2px solid hsl(180, 62%, 55%);
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.userCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.userCard-name {
+  margin: 8px 0;
+}
+
+.userCard-company,
+.userCard-email {
+  margin: 0;
+}
+
+.userCard-name {
+  font-weight: 600;
+  color: hsl(234, 12%, 34%);
+}
+
+.userCard-company,
+.userCard-email {
+  font-weight: 400;
+  color: hsl(229, 6%, 66%);
+}
+
+.userCard-footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+}
+
+.userCard-viewMoreBtn {
+  margin: 16px 16px 0 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.userCard-detail {
+  font-weight: 600;
+}

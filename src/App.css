@@ -1,0 +1,22 @@
+.userCardsContainer {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+  grid-template-columns: 1fr; /* Default to 1 column for mobile */
+}
+
+/* For tablets: 2 columns */
+@media (min-width: 600px) {
+  .userCardsContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* For desktops: 3 columns */
+@media (min-width: 900px) {
+  .userCardsContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

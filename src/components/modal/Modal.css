@@ -1,0 +1,94 @@
+.modalBackdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background-color: #fff;
+  padding: 20px;
+  width: auto;
+  max-width: 700px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.modalHeader {
+  background-color: #f3f3f3;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-left: -20px;
+  margin-top: -20px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.modalHeaderContent {
+  flex-grow: 1;
+}
+
+.modalUserName {
+  margin: 0;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+.modalUserCompany {
+  margin: 0;
+  color: #666;
+}
+
+.modalCloseBtn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: hsl(229, 6%, 66%);
+  cursor: pointer;
+}
+
+.modalBody {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.modalColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.modalColumn p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .modalContent {
+    width: 90%;
+  }
+
+  .modalBody {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .modalColumn {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .modalBody {
+    grid-template-columns: 1fr;
+  }
+}
